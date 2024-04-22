@@ -5,16 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><%= title %></title>
 </head>
+<style>
+  .div1{
+    text-align: center;
+  }
+  
+  h1{
+    font-size: 60px;
+  }
+  
+</style>
 <body>
-  <h1><%= title %></h1>
-  <form action="/contact" method="post">
-    <label for="nom">Nom :</label><br>
-    <input type="text" id="nom" name="nom" required><br>
-    <label for="email">Email :</label><br>
-    <input type="email" id="email" name="email" required><br>
-    <label for="message">Message 1 :</label><br>
-    <textarea id="message" name="message" rows="4" required></textarea><br>
-    <button type="submit">Envoyer</button>
-  </form>
+  <div class="div1">
+    <h1><%= title %></h1>
+    <form action="/contact" method="post">
+      <label for="nom">Nom :</label><br>
+      <input type="text" id="nom" name="nom" required><br>
+      <label for="email">Email :</label><br>
+      <input type="email" id="email" name="email" required><br>
+      <label for="message">Message 1 :</label><br>
+      <textarea id="message" name="message" rows="4" required></textarea><br>
+      <button type="submit">Envoyer</button>
+    </form>
+  </div>
+  
 </body>
 </html>
